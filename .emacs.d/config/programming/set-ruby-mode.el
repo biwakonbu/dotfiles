@@ -8,24 +8,30 @@
 
 (add-hook 'enh-ruby-mode-hook
           '(lambda ()
-                  (setq tab-with 2)
-                  (setq tab-indent-level tab-width)
-                  (setq ruby-deep-indent-paren-style nil)
-                  ))
+             ;; ruby block
+             (require 'ruby-block)
+             (ruby-block-mode t)
 
-;; ruby end
-(require 'ruby-end)
-(setq ruby-block-highlight-toggle t)
+             ;; ruby end
+             (require 'ruby-end)
+             (setq ruby-block-highlight-toggle t)
 
-;; ruby block
-(require 'ruby-block)
-(add-hook 'enh-ruby-mode-hook '(lambda () (ruby-block-mode t)))
-(setq ruby-block-highlight-toggle t)
+             ;; ruby electric
+             (require 'ruby-electric)
+             (ruby-electric-mode t)
+             (setq ruby-block-highlight-toggle t)
+             ;; (setq ruby-electric-expand-delimiters-list nil)
 
-;; ruby electric
-(require 'ruby-electric)
-(add-hook 'enh-ruby-mode-hook '(lambda () (ruby-electric-mode t)))
-;;(setq ruby-electric-expand-delimiters-list nil)
+             ;; rbenv
+             (require 'rbenv)
+             (global-rbenv-mode)
+             (setq rbenv-show-active-ruby-in-modeline nil)
+
+             ;; indent
+             (setq tab-with 2)
+             (setq tab-indent-level tab-width)
+             (setq ruby-deep-indent-paren-style nil)
+             ))
 
 ;; rcodetools
 (require 'rcodetools)
@@ -35,9 +41,5 @@
   (define-key ruby-mode-map "\C-c\C-t" 'ruby-toggle-buffer)
   (define-key ruby-mode-map "\C-c\C-f" 'rct-ri))
 (add-hook 'enh-ruby-mode-hook 'enh-ruby-mode-hook-rcodetools)
-
-;; rbenv
-(require 'rbenv)
-(global-rbenv-mode)
 
 (provide 'set-ruby-mode)
