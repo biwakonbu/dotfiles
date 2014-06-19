@@ -11,10 +11,15 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;; prog suport
+(require 'set-flycheck)
+
 ;; advanced emacs
 (require 'set-helm)
 
-;; programming mode
+;; prog mode
 (require 'set-ruby-mode)
+
+
 
 (provide 'init)

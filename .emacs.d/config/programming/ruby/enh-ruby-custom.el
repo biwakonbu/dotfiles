@@ -17,7 +17,6 @@
 (setq rbenv-show-active-ruby-in-modeline nil)
 (global-rbenv-mode)
 
-
 ;; indent
 (setq tab-with 2)
 (setq tab-indent-level tab-width)

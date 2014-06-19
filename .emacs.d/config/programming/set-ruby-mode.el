@@ -6,9 +6,11 @@
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
+(require 'rubocop)
+(add-hook 'enh-ruby-mode-hook 'rubocop-mode)
 
+;; enh ruby custom mode
 (eval-after-load 'enh-ruby-mode '(require 'enh-ruby-custom))
-;;  '(progn
 
 ;; rcodetools
 (require 'rcodetools)
