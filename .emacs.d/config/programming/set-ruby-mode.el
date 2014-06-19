@@ -36,4 +36,8 @@
   (define-key ruby-mode-map "\C-c\C-f" 'rct-ri))
 (add-hook 'enh-ruby-mode-hook 'enh-ruby-mode-hook-rcodetools)
 
+;; rbenv
+(require 'rbenv)
+(global-rbenv-mode)
+
 (provide 'set-ruby-mode)
