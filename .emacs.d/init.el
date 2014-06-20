@@ -20,6 +20,4 @@
 ;; prog mode
 (require 'set-ruby-mode)
 
-
-
 (provide 'init)
