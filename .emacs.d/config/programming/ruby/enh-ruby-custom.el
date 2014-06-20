@@ -22,5 +22,4 @@
 (setq tab-indent-level tab-width)
 (setq ruby-deep-indent-paren-style nil)
 
-
 (provide 'enh-ruby-custom)

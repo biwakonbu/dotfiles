@@ -16,6 +16,10 @@
 ;;; ツールバー(add-to-list 'default-frame-alist '(alpha . 0))を非表示
 ;; M-x tool-bar-mode で表示非表示を切り替えられる
 (tool-bar-mode -1)
+;; カラム番号の表示
+(column-number-mode t)
+;; 行番号の非表示
+(line-number-mode 1)
 ;;; メニューバーを非表示
 ;; M-x menu-bar-mode で表示非表示を切り替えられる
 (menu-bar-mode -1)

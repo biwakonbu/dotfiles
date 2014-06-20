@@ -7,6 +7,8 @@
 ;; prog suport
 (depends-on "flycheck")
 (depends-on "flycheck-color-mode-line")
+(depends-on "ac-helm")
+(depends-on "magit")
 
 ;; prog modes
 (depends-on "rubocop")

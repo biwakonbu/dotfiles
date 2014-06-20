@@ -13,13 +13,13 @@
 
 ;; prog suport
 (require 'set-flycheck)
+(require 'magit)
 
 ;; advanced emacs
 (require 'set-helm)
+(require 'helm-support)
 
 ;; prog mode
 (require 'set-ruby-mode)
-
-
 
 (provide 'init)
