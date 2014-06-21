@@ -1,15 +1,15 @@
 ;; load path
 (require 'load-paths)
 
+;; cask
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 ;; interfaces
 (require 'start-scratch-screen)
 (require 'set-global-keybind)
 (require 'set-interfaces)
 (require 'set-packages)
-
-;; cask
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
 
 ;; prog suport
 (require 'set-flycheck)
@@ -29,6 +29,10 @@
 (require 'set-helm)
 (require 'helm-support)
 (require 'sequential-command-config)
+(require 'foreign-regexp)
+(custom-set-variables
+ '(foreign-regexp/regexp-type 'ruby)
+ '(reb-re-syntax 'foreign-regexp))
 
 ;; prog mode
 (require 'set-yaml-mode)
