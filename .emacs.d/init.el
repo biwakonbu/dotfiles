@@ -29,6 +29,7 @@
 (require 'set-helm)
 (require 'helm-support)
 (require 'sequential-command-config)
+(require 'set-anzu)
 (require 'foreign-regexp)
 (custom-set-variables
  '(foreign-regexp/regexp-type 'ruby)
