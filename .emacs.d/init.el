@@ -16,6 +16,14 @@
 (require 'magit)
 (require 'git-gutter)
 (global-git-gutter-mode t)
+(custom-set-variables
+ '(git-gutter:window-width 2)
+ '(git-gutter:modified-sign "=")
+ '(git-gutter:added-sign "+")
+ '(git-gutter:deleted-sign "-"))
+(set-face-foreground 'git-gutter:modified "deepskyblue") ;; background color
+(set-face-foreground 'git-gutter:added "green")
+(set-face-foreground 'git-gutter:deleted "red")
 
 ;; advanced emacs
 (require 'set-helm)
