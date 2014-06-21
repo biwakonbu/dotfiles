@@ -23,5 +23,6 @@
 
 ;; prog mode
 (require 'set-ruby-mode)
+(require 'set-markdown-mode)
 
 (provide 'init)
