@@ -9,7 +9,7 @@
 (depends-on "flycheck-color-mode-line")
 (depends-on "ac-helm")
 (depends-on "magit")
-(depends-on "git-gutter")
+(depends-on "git-gutter+")
 
 ;; prog modes
 (depends-on "rubocop")
