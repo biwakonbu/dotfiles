@@ -3,3 +3,5 @@
 *.elc
 
 .emacs.d/.cask/**
+/.emacs.d/config/package/helm-support.el
+/.emacs.d/eshell/
