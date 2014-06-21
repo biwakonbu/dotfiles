@@ -30,6 +30,7 @@
 (require 'helm-support)
 
 ;; prog mode
+(require 'set-yaml-mode)
 (require 'set-ruby-mode)
 (require 'set-markdown-mode)
 
