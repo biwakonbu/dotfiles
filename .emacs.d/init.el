@@ -28,6 +28,7 @@
 ;; advanced emacs
 (require 'set-helm)
 (require 'helm-support)
+(require 'sequential-command-config)
 
 ;; prog mode
 (require 'set-yaml-mode)

@@ -10,6 +10,7 @@
 (depends-on "ac-helm")
 (depends-on "magit")
 (depends-on "git-gutter")
+(depends-on "sequential-command")
 
 ;; prog modes
 (depends-on "markdown-mode")
