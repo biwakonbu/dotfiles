@@ -14,6 +14,8 @@
 ;; prog suport
 (require 'set-flycheck)
 (require 'magit)
+(require 'git-gutter)
+(global-git-gutter-mode t)
 
 ;; advanced emacs
 (require 'set-helm)
