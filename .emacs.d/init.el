@@ -28,8 +28,10 @@
 ;; advanced emacs
 (require 'set-helm)
 (require 'helm-support)
+(require 'helm-filelist)
 (require 'sequential-command-config)
 (require 'set-anzu)
+(require 'expand-region)
 (require 'foreign-regexp)
 (custom-set-variables
  '(foreign-regexp/regexp-type 'ruby)
