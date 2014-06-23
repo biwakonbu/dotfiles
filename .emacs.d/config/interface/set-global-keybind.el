@@ -5,6 +5,9 @@
 (define-key global-map (kbd "C-a") 'seq-home)
 (define-key global-map (kbd "C-e") 'seq-end)
 
+(global-set-key (kbd "C-@") 'er/expand-region)
+(global-set-key (kbd "C-c C-f") 'my/helm-files)
+(global-set-key (kbd "C-M-@") 'er/contract-region)
 (global-set-key (kbd "M-%") 'anzu-query-replace)
 (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
 (provide 'set-global-keybind)
