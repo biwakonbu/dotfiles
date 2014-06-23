@@ -13,6 +13,8 @@
 (depends-on "sequential-command")
 (depends-on "foreign-regexp")
 (depends-on "anzu")
+(depends-on "expand-region")
+;;(depends-on "ace-jump")
 
 ;; prog modes
 (depends-on "markdown-mode")
