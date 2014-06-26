@@ -27,7 +27,6 @@
 
 ;; advanced emacs
 (require 'set-helm)
-(require 'helm-support)
 (require 'helm-filelist)
 (require 'sequential-command-config)
 (require 'set-anzu)
