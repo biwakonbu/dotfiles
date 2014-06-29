@@ -11,6 +11,7 @@
   (setq skk-large-jisyo "~/Dropbox/skk/SKK-JISYO.L"))
 
 (setq skk-jisyo-code 'utf-8)
+(setq skk-sticky-key ";")
 
 (add-hook 'isearch-mode-hook
           (function (lambda ()
