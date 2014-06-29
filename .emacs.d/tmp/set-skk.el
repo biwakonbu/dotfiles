@@ -2,8 +2,15 @@
 (require 'skk-study)
 
 ;; skk-server AquaSKK
-(setq skk-server-portnum 1178)
-(setq skk-server-host "localhost")
+(if (eq system-type 'darwin)
+    (progn
+      (setq skk-server-portnum 1178)
+      (setq skk-server-host "localhost")
+      (add-to-list 'skk-completion-prog-list
+                   '(skk-comp-from-jisyo "~/Dropbox/skk/skk-jisyo.utf8")))
+  (setq skk-large-jisyo "~/Dropbox/skk/SKK-JISYO.L"))
+
+(setq skk-jisyo-code 'utf-8)
 
 (add-hook 'isearch-mode-hook
           (function (lambda ()
