@@ -10,6 +10,7 @@
 (require 'set-global-keybind)
 (require 'set-interfaces)
 (require 'set-packages)
+(require 'set-skk)
 
 ;; prog suport
 (require 'set-flycheck)

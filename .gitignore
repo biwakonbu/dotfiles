@@ -4,8 +4,9 @@
 *.elc
 
 .emacs.d/.cask/**
-/.emacs.d/config/package/helm-support.el
-/.emacs.d/eshell/
+.emacs.d/config/package/helm-support.el
+.emacs.d/info/**
+.emacs.d/eshell/
 
 fish/fish_history
 fish/fishd.*

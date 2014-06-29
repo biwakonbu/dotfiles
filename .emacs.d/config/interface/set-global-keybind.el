@@ -4,6 +4,7 @@
 (define-key global-map (kbd "C-t") 'other-window)
 (define-key global-map (kbd "C-a") 'seq-home)
 (define-key global-map (kbd "C-e") 'seq-end)
+(define-key global-map (kbd "C-c C-j") 'skk-mode)
 
 (global-set-key (kbd "C-@") 'er/expand-region)
 (global-set-key (kbd "C-c C-f") 'my/helm-files)
