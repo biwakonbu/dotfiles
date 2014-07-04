@@ -21,6 +21,7 @@
 (depends-on "web-mode")
 (depends-on "yaml-mode")
 
+; ruby
 (depends-on "rubocop")
 (depends-on "rbenv")
 (depends-on "enh-ruby-mode")
