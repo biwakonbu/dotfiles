@@ -14,6 +14,7 @@
 (depends-on "foreign-regexp")
 (depends-on "anzu")
 (depends-on "expand-region")
+(depends-on "auto-complete")
 ;;(depends-on "ace-jump")
 
 ;; prog modes

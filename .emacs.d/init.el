@@ -25,6 +25,9 @@
 (set-face-foreground 'git-gutter:modified "deepskyblue") ;; background color
 (set-face-foreground 'git-gutter:added "green")
 (set-face-foreground 'git-gutter:deleted "red")
+(require 'auto-complete)
+(require 'auto-complete-config)
+(global-auto-complete-mode t)
 
 ;; advanced emacs
 (require 'set-helm)
