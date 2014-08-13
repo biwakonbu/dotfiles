@@ -6,6 +6,8 @@
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
+(setq enh-ruby-deep-indent-paren nil)
+
 (require 'rubocop)
 (add-hook 'enh-ruby-mode-hook 'rubocop-mode)
 
