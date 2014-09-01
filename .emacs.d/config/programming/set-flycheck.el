@@ -1,7 +1,6 @@
 (require 'flycheck)
 (setq flycheck-check-syntax-automatically '(mode-enabled save))
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
+(add-hook 'enh-ruby-mode-hook 'flycheck-mode)
 (flycheck-define-checker ruby-rubocop
   "A Ruby syntax and style checker using the RuboCop tool.
 

@@ -45,8 +45,12 @@
 (require 'set-ruby-mode)
 (require 'set-markdown-mode)
 
+;; html
+(require 'slim-mode)
+(add-to-list 'auto-mode-alist '("\\.slim$" . "slim-mode"))
+
 ; fish mode
 (require 'fish-mode)
-(add-to-list 'auto-mode-alist '("\\.fish$" . fish-mode))
+(add-to-list 'auto-mode-alist '("\\.fish$" . "fish-mode"))
 
 (provide 'init)

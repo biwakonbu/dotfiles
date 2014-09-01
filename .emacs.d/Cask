@@ -17,6 +17,9 @@
 (depends-on "auto-complete")
 ;;(depends-on "ace-jump")
 
+;; html
+(depends-on "slim-mode")
+
 ;; prog modes
 (depends-on "markdown-mode")
 (depends-on "web-mode")

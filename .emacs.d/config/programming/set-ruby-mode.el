@@ -17,6 +17,7 @@
 ;; rcodetools
 (require 'rcodetools)
 (setq rct-find-tag-if-available nil)
+
 (defun ruby-mode-hook-rcodetools ()
   (define-key ruby-mode-map "\M-\C-i" 'rct-complete-symbol)
   (define-key ruby-mode-map "\C-c\C-t" 'ruby-toggle-buffer)
