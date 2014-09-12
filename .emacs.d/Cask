@@ -5,6 +5,8 @@
 (depends-on "helm")
 
 ;; prog suport
+(depends-on "flymake")
+(depends-on "flymake-cursor")
 (depends-on "flycheck")
 (depends-on "flycheck-color-mode-line")
 (depends-on "ac-helm")
@@ -19,6 +21,8 @@
 
 ;; html
 (depends-on "slim-mode")
+(depends-on "sass-mode")
+(depends-on "scss-mode")
 
 ;; prog modes
 (depends-on "markdown-mode")

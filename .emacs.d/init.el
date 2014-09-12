@@ -29,6 +29,10 @@
 (require 'auto-complete-config)
 (ac-config-default)
 (global-auto-complete-mode t)
+(setq ac-use-menu-map t)
+;; デフォルトで設定済み
+(define-key ac-menu-map "\C-n" 'ac-next)
+(define-key ac-menu-map "\C-p" 'ac-previous)
 
 ;; advanced emacs
 (require 'set-helm)
@@ -55,10 +59,26 @@
 
 ;; html
 (require 'slim-mode)
-(add-to-list 'auto-mode-alist '("\\.slim$" . "slim-mode"))
-
+(add-to-list 'auto-mode-alist '("\\.slim$" . slim-mode))
+(require 'scss-mode)
+(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
+(require 'custom-scss-check)
 ; fish mode
 (require 'fish-mode)
-(add-to-list 'auto-mode-alist '("\\.fish$" . "fish-mode"))
+(add-to-list 'auto-mode-alist '("\\.fish$" . fish-mode))
 
 (provide 'init)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
