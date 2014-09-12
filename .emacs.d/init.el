@@ -27,6 +27,7 @@
 (set-face-foreground 'git-gutter:deleted "red")
 (require 'auto-complete)
 (require 'auto-complete-config)
+(ac-config-default)
 (global-auto-complete-mode t)
 
 ;; advanced emacs
@@ -36,9 +37,16 @@
 (require 'set-anzu)
 (require 'expand-region)
 (require 'foreign-regexp)
+; foreign-regexp
 (custom-set-variables
  '(foreign-regexp/regexp-type 'ruby)
  '(reb-re-syntax 'foreign-regexp))
+
+; helm-keybind
+(setq helm-delete-minibuffer-contents-from-point t)
+(defadvice helm-delete-minibuffer-contents (before helm-emulate-kill-line activate)
+  "Emulate `kill-line' in helm minibuffer"
+  (kill-new (buffer-substring (point) (field-end))))
 
 ;; prog mode
 (require 'set-yaml-mode)
