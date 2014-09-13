@@ -11,7 +11,7 @@
   (insert ";")
   (newline-and-indent))
 
-(add-to-list 'auto-mode-alist '("\\.\\(scss\\|css\\)\\'" . scss-mode))
+(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 (add-hook 'scss-mode-hook 'auto-complete-mode)
 ;(add-hook 'scss-mode-hook 'flycheck-mode)
 (add-to-list 'ac-modes 'scss-mode)

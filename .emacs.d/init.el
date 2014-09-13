@@ -61,7 +61,6 @@
 (require 'slim-mode)
 (add-to-list 'auto-mode-alist '("\\.slim$" . slim-mode))
 (require 'scss-mode)
-(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
 (require 'custom-scss-check)
 ; fish mode
 (require 'fish-mode)
