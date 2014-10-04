@@ -1,6 +1,15 @@
 ;; load path
 (require 'load-paths)
 
+;; Mac 用フォント設定
+(set-face-attribute 'default nil
+                    :family "Ricty" ;; font
+                    :height 135) ;; font size
+;; 日本語
+(set-fontset-font
+ nil 'japanese-jisx0208
+ (font-spec :family "Hiragino Kaku Gothic ProN"))
+
 ;; cask
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
