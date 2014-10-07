@@ -12,11 +12,18 @@
 
 (setq skk-jisyo-code 'utf-8)
 (setq skk-sticky-key ";")
+(setq skk-japanese-message-and-error t)
+(setq skk-study-file "~/Dropbox/skk/.skk-study")
 
-(add-hook 'isearch-mode-hook
-          (function (lambda ()
-                      (and (boundp 'skk-mode) skk-mode
-                           (skk-isearch-mode-setup)))))
+
+(defvar skk-auto-save-jisyo-interval 600)
+(defun skk-auto-save-jisyo ()
+  (skk-save-jisyo)
+  )
+(run-with-idle-timer skk-auto-save-jisyo-interval
+                     skk-auto-save-jisyo-interval
+                     'skk-auto-save-jisyo)
+
 (add-hook 'isearch-mode-end-hook
           (function (lambda ()
                       (and (boundp 'skk-mode) skk-mode (skk-isearch-mode-cleanup))
