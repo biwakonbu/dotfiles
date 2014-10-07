@@ -57,6 +57,16 @@
 (require 'set-ruby-mode)
 (require 'set-markdown-mode)
 
+;; lisp mode
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+(require 'slime-autoloads)
+(slime-setup '(slime-repl))
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+(eval-after-load "auto-complete"
+  '(add-to-list 'ac-modes 'slime-repl-mode))
+
 ;; html
 (require 'slim-mode)
 (add-to-list 'auto-mode-alist '("\\.slim$" . slim-mode))
@@ -67,17 +77,3 @@
 (add-to-list 'auto-mode-alist '("\\.fish$" . fish-mode))
 
 (provide 'init)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
