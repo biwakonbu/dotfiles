@@ -25,6 +25,7 @@
 (depends-on "scss-mode")
 
 ;; prog modes
+(depends-on "ac-slime")
 (depends-on "slime")
 (depends-on "markdown-mode")
 (depends-on "web-mode")
