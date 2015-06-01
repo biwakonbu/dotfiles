@@ -4,6 +4,9 @@
 
 (depends-on "helm")
 
+;; Setup
+(depends-on "init-loader")
+
 ;; prog suport
 (depends-on "flymake")
 (depends-on "flymake-cursor")

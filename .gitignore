@@ -12,3 +12,5 @@
 
 fish/fish_history
 fish/fishd.*
+
+\.DS_Store
